@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "social-music",
+    "slug": "social-music",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "social-music"
+}
