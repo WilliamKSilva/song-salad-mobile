@@ -1,0 +1,62 @@
+{
+    "env": {
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint",
+        "prettier"        
+    ],
+    "rules": {
+        "import/no-unresolved": "error",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".ts", ".jsx", ".tsx"] }],
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "import/no-extraneous-dependencies": "off",
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "indent": ["error", 2],
+        "no-multi-spaces": ["error"],
+        "import/prefer-default-export": "off",
+        "react-native/no-unused-styles": 0,
+        "react-native/sort-styles": 0,
+        "react-native/split-platform-components": 0,
+        "react-native/no-inline-styles": 0,
+        "react-native/no-color-literals": 0,
+        "react-native/no-single-element-style-arrays": 0,
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ]
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }          
+        }
+    }
+}
