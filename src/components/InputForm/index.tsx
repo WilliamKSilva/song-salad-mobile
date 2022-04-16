@@ -1,7 +1,6 @@
 import React from 'react-native';
 import { Controller, useForm } from 'react-hook-form';
 import { Input } from '../Input';
-import { Wrapper } from './styles';
 import { InputError } from '../InputError';
 
 type Props = {
