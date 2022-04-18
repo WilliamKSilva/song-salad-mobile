@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/core';
 import React from 'react-native';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
@@ -6,6 +7,8 @@ import { PictureSelect } from '../../components/PictureSelect';
 import { Wrapper, WrapperButton, WrapperInputs, WrapperPictureSelect } from './styles';
 
 export function Register() {
+  const { navigate } = useNavigation();
+
   return (
     <Wrapper>
       <Header />
@@ -19,7 +22,7 @@ export function Register() {
         <InputForm name="confirm_password" placeholder="Confirmar Senha" error="Erro" required />
       </WrapperInputs>
       <WrapperButton>
-        <Button title="Enviar" />
+        <Button title="Enviar" onPress={() => navigate('Introduction')} />
       </WrapperButton>
     </Wrapper>
   );

@@ -3,11 +3,12 @@ import { Title, Wrapper } from './styles';
 
 type Props = ButtonProps & {
   title: string;
+  onPress: () => void;
 };
 
-export function Button({ title }: Props) {
+export function Button({ title, onPress }: Props) {
   return (
-    <Wrapper>
+    <Wrapper onPress={onPress}>
       <Title>{title}</Title>
     </Wrapper>
   );
