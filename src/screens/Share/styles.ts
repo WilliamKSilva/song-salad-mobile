@@ -12,3 +12,8 @@ export const Header = styled.View`
   align-items: center;
   justify-content: center;
 `;
+
+export const WrapperContent = styled.View`
+  align-items: center;
+  margin-top: 5%;
+`;

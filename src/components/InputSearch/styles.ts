@@ -15,7 +15,6 @@ export const TextInput = styled.TextInput.attrs((props) => ({
   placeholderTextColor: props.theme.colors.black,
 }))`
   width: 85%;
-
   padding: 4px;
 `;
 

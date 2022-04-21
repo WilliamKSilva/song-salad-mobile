@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "118787357613",
+    "project_id": "song-salad",
+    "storage_bucket": "song-salad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118787357613:android:ef1e4255132e5fdc407f24",
+        "android_client_info": {
+          "package_name": "com.socialmusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118787357613-q8e6j9pgeg2punc7vc9cglciuf4e409b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.socialmusic",
+            "certificate_hash": "108856a0bceb561b3c4a10f1cc3b83bb4b330ecd"
+          }
+        },
+        {
+          "client_id": "118787357613-capiosfcaebl3s46lodefvahu92p77h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQetMGLJ3C0RSlUexuk3Ak5eiaP75EtzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118787357613-capiosfcaebl3s46lodefvahu92p77h4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

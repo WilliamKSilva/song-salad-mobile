@@ -1,34 +1,25 @@
-import React from 'react-native';
-import { Controller, useForm } from 'react-hook-form';
+/* eslint-disable react/jsx-props-no-spreading */
+import React, { TextInputProps } from 'react-native';
+import { Controller, Control } from 'react-hook-form';
+
 import { Input } from '../Input';
 import { InputError } from '../InputError';
 
-type Props = {
+type Props = TextInputProps & {
+  control: Control;
   placeholder: string;
-  required: boolean;
+
   name: string;
-  error: string;
 };
 
-export function InputForm({ placeholder, required, name, error }: Props) {
-  const {
-    control,
-    formState: { errors },
-  } = useForm();
-
+export function InputForm({ placeholder, control, name, ...rest }: Props) {
   return (
-    <>
-      <Controller
-        control={control}
-        rules={{
-          required,
-        }}
-        render={({ field: { onChange, value } }) => (
-          <Input onChangeText={onChange} value={value} placeholder={placeholder} />
-        )}
-        name={name}
-      />
-      {errors.name && <InputError error={error} />}
-    </>
+    <Controller
+      control={control}
+      render={({ field: { onChange, value } }) => (
+        <Input onChangeText={onChange} value={value} placeholder={placeholder} {...rest} />
+      )}
+      name={name}
+    />
   );
 }

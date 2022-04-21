@@ -1,3 +1,4 @@
+import { useForm } from 'react-hook-form';
 import React, { Image } from 'react-native';
 import { Button } from '../../components/Button';
 import { InputForm } from '../../components/InputForm';
@@ -5,6 +6,8 @@ import { TextNavigate } from '../../components/TextNavigate';
 import { SocialGoogle, Title, Wrapper, WrapperButton, WrapperLogo } from './styles';
 
 export function Login() {
+  const { control } = useForm();
+
   return (
     <Wrapper>
       <WrapperLogo>
@@ -14,8 +17,8 @@ export function Login() {
         />
         <Title>Song Salad</Title>
       </WrapperLogo>
-      <InputForm name="email" placeholder="E-mail" error="O email é obrigatório" required />
-      <InputForm name="password" placeholder="Senha" error="A senha é obrigatória" required />
+      <InputForm control={control} name="email" placeholder="E-mail" required />
+      <InputForm control={control} name="password" placeholder="Senha" required />
       <WrapperButton>
         <Button title="Entrar" onPress={() => console.log('teste')} />
       </WrapperButton>
